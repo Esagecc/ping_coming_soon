@@ -40,7 +40,7 @@ h2 {
 }
 
 h2 span {
-    color: black;
+    color: var(--dk-blue);
     font-weight: 600;
 }
 
@@ -62,13 +62,22 @@ input {
     height: 40px;
     border-radius: 20px;
     margin-bottom: 0.5rem;
-    padding-left: 30px;
+    padding-left: 1.5rem;
 }
 
 input::placeholder {
     color: var(--pale-blue);
-    padding-left: 30px;
     font-size: .75rem;
+}
+
+.error-text {
+    color: var(--lt-red);
+    font-size: .7rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: -2px;
+    padding-bottom: 25px;
+    display: none;
 }
 
 button {
@@ -81,6 +90,10 @@ button {
     -webkit-box-shadow: 3px 6px 5px 0px rgba(219,206,219,1);
     -moz-box-shadow: 3px 6px 5px 0px rgba(219,206,219,1);
     box-shadow: 3px 6px 5px 0px rgba(219,206,219,1);
+}
+
+button:hover {
+    background-color: hsl(223, 27%, 44%);
 }
 
 .dash {
@@ -104,7 +117,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.icons i:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--blue);
 }
 
 footer p {
@@ -180,5 +198,16 @@ footer p {
 
     footer p {
         font-size: 0.8rem;
+    }
+
+    form {
+        position: relative;
+    }
+
+    .error-text {
+        position: absolute;
+        bottom: -40px;
+        left: 30px;
+        font-size: .8rem;
     }
 }
