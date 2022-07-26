@@ -118,7 +118,67 @@ footer p {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    padding-bottom: 20px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:500px) {
+    .logo {
+        height: 28px;
+    }
+
+    main {
+        width: 640px;
+       margin: 65px auto; 
+    }
+    
+    h2 {
+        font-size: 3rem;
+        padding-bottom: 16px;
+    }
+
+    h5 {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+    }
+
+    input {
+        width: 65%;
+        height: 54px;
+        border-radius: 25px;
+        padding-left: 15px;
+
+    }
+    
+
+    input::placeholder {
+        font-size: 1rem;
+        padding-left: 15px;
+
+    }
+
+    button {
+        width: 30%;
+        height: 54px;
+        font-size: 1rem;
+        border-radius: 25px;
+        justify-content: flex-end;
+    }
+
+    .dash {
+        padding-top: 5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
 }
