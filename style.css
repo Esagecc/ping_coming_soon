@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;600;700&display=swap');
+
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --lt-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --dk-blue: hsl(209, 33%, 12%);
+}
+
+body {  
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 100vh;
+    margin: 80px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+    height: 16px;
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-weight: 100;
+    color: var(--gray);
+    padding-bottom: 25px;
+}
+
+h2 span {
+    color: black;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid var(--pale-blue);
+    width: 80vw;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    color: var(--pale-blue);
+    padding-left: 30px;
+    font-size: .75rem;
+}
+
+button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 6px 5px 0px rgba(219,206,219,1);
+    -moz-box-shadow: 3px 6px 5px 0px rgba(219,206,219,1);
+    box-shadow: 3px 6px 5px 0px rgba(219,206,219,1);
+}
+
+.dash {
+    padding-top: 4rem;
+    width: 100%;
+    padding-bottom: 8.5rem;
+}
+
+.icons {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 2rem;
+}
+
+.icons i {
+    color: var(--blue);
+    border: 1px solid var(--pale-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
